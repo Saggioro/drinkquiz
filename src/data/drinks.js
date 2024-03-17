@@ -25,7 +25,7 @@ export const drinks = [
     ingredientes: ["Cachaça", "Limão", "Açúcar", "Água com gás", "Gelo"],
   },
   { name: "Daiquiri", ingredientes: ["Rum branco", "Suco de limão", "Açúcar"] },
-  { name: "Negroni", ingredientes: ["Rum Gin", "Vermute tinto", "Campari"] },
+  { name: "Negroni", ingredientes: ["Gin", "Vermute tinto", "Campari"] },
 
   {
     name: "Bloody Mary",
