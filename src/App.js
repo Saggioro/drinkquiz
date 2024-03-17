@@ -94,7 +94,7 @@ function App() {
 
       if (ing?.isRight) return "#2e7d32";
 
-      return undefined;
+      return "#eeee";
     },
     [respostas]
   );
@@ -138,11 +138,13 @@ function App() {
   };
 
   return (
-    <div>
+    <div style={{ height: "100%", backgroundColor: "#222831" }}>
       {drinks.map((drink) => {
         return (
           <div key={drink.name}>
-            <h2>Quais são os ingredientes do drink {drink.name}?</h2>
+            <h2 style={{ margin: 0, padding: "20px 0", color: "#eeee" }}>
+              Quais são os ingredientes do drink {drink.name}?
+            </h2>
 
             <div>
               {todosIngredientes.map((ingrediente) => (
@@ -166,10 +168,17 @@ function App() {
                         "&.Mui-checked": {
                           color: getColor(drink.name, ingrediente),
                         },
+                        ".MuiFormControlLabel-root": {
+                          color: "white",
+                        },
                       }}
                     />
                   }
-                  label={ingrediente}
+                  label={
+                    <span style={{ color: getColor(drink.name, ingrediente) }}>
+                      {ingrediente}
+                    </span>
+                  }
                 />
               ))}
             </div>
