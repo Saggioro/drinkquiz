@@ -22,7 +22,7 @@ export const drinks = [
   },
   {
     name: "Caipirinha",
-    ingredientes: ["Cachaça", "Limão", "Açúcar", "Água com gás", "Gelo"],
+    ingredientes: ["Cachaça", "Limão", "Açúcar", "Gelo"],
   },
   { name: "Daiquiri", ingredientes: ["Rum branco", "Suco de limão", "Açúcar"] },
   { name: "Negroni", ingredientes: ["Gin", "Vermute tinto", "Campari"] },
